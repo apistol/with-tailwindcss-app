@@ -52,7 +52,7 @@ const Header = ( { header }:any ) => {
 							<div className="text-sm font-medium uppercase lg:flex-grow">
 								{ ! isEmpty( headerMenuItems ) && headerMenuItems.length ? headerMenuItems.map( (menuItem : any) => (
 									<Link legacyBehavior key={menuItem?.ID} href={ menuItem?.url || '/' }>
-										<a className="block mt-4 mr-10 text-black lg:inline-block lg:mt-0 hover:text-black"
+										<span className="block mt-4 mr-10 text-black lg:inline-block lg:mt-0 hover:text-black"
 										   dangerouslySetInnerHTML={{__html: menuItem.title}}/>
 									</Link>
 								) ) : null }
